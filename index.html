@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="logo" href="./memes/logo.png">
+    <title>GiggleHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Joke Generator</h1>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+    <nav>
+        <input type="text" id="search-bar" placeholder="Search for jokes...">
+        <div id="suggestions-container"></div>
+        <select id="category-filter">
+            <option value="all">All</option>
+            <!-- Categories will be dynamically inserted here -->
+        </select>
+    </nav>
+    <main>
+        <section id="joke-cards-container">
+            <!-- Joke cards will be dynamically generated here -->
+        </section>
+        <section id="content-display">
+            <div id="joke-display"></div>
+            <div id="video-jokes-container"></div>
+        </section>
+        <section id="favorites-section">
+            <h2>Favorite Jokes</h2>
+            <div id="favorites-container"></div>
+        </section>
+        <section id="leaderboard">
+            <h2>Top Liked Jokes</h2>
+            <ol id="leaderboard-list"></ol>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

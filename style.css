@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin: 20px;
+    position: relative;
+}
+
+#search-bar, #category-filter {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#suggestions-container {
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+}
+
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background-color: #ddd;
+}
+
+#joke-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.joke-card {
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.joke-card:hover {
+    background-color: #ddd;
+}
+
+#content-display {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    min-height: 50px;
+    font-size: 18px;
+}
+
+#joke-display, #video-jokes-container {
+    margin-bottom: 20px;
+}
+
+#joke-display img, #video-jokes-container video {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#favorites-container, #leaderboard-list {
+    margin: 20px;
+    padding: 20px;
+}
+
+#leaderboard-list {
+    list-style-type: decimal;
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.dark-mode header {
+    background-color: #444;
+}
+
+.dark-mode .joke-card {
+    background-color: #333;
+    color: #f0f0f0;
+}
